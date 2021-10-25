@@ -14,9 +14,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 #two,
 #one {
   color: white;
-  height: 16px;
-  width: 50%;
-
 }
 #three {
   background-color: blue;
@@ -38,11 +35,21 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 #three,
 #two,
 #one {
-
+  height: 16px;
+  width: 50%;
 }
 
 @media screen and (min-width: 600px) {
-
+  #three {
+    background-color: blue;
+    align-self: flex-end;
+  }
+  #two {
+    background-color: green;
+  }
+  #one {
+    background-color: red;
+  }
 }
 
 @media screen and (min-width: 800px) {
