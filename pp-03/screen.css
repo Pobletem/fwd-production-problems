@@ -35,11 +35,21 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 #three,
 #two,
 #one {
-
+  height: 60vw;
 }
 
 @media screen and (min-width: 600px) {
 
+  #content {
+    flex-flow: row-reverse wrap;
+    
+  }
+
+  #three,
+  #two,
+  #one {
+    flex: 1 0 50%;
+  }
 }
 
 @media screen and (min-width: 800px) {
