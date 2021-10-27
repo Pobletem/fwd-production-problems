@@ -55,5 +55,15 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 
 @media screen and (min-width: 800px) {
+  #content {
+    flex-flow: row-reverse;
+  }
+
+  #two,
+  #one,
+  #three {
+    flex: 1 0 33%;
+    height: 33vw;
+  }
 
 }
