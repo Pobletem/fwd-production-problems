@@ -5,6 +5,9 @@
   `x` as the v
   ariable inside the function, however.
 */
+
+
+
 /*
 x = 5;
 
@@ -12,6 +15,10 @@ function double(num) {
   x = num * 2;
   return x;
 }
+
+console.log('The value of x is', x, '-- it should be 5.');
+double(6);
+
 */
 
 
@@ -27,25 +34,45 @@ function double(num) {
 */
 
 
+/*
+function scopedDouble() {
+  var x = 5;
 
+  function double(num) {
+    x = num * 2;
+    return x;
+  }
+
+  console.log('The value of x is', x, '-- it should be 5.');
+  double(6);
+}
+
+scopedDouble();
+*/
 
 /*
   Step 3. Rewrite your corrected `double()` function from Step 2.
   so that non-number values passed into the function are handled
   in some reasonable way.
 */
-x = 5;
 
-function double(num) {
 
-  if (typeof(num) !== 'number'){
-    console.log('num must be a number; You entered "', num, '"');
-    return;
+function scopedDouble() {
+  var x = 5;
+
+  function double(num) {
+
+    if (typeof(num) !== 'number'){
+      console.log('num must be a number; You entered "', num, '"');
+      return;
+    }
+
+    x = num * 2;
+    return x;
   }
 
-  x = num * 2;
-  return x;
+  console.log('The value of x is', x, '-- it should be 5.');
+  double(6);
 }
 
-console.log('The value of x is', x, '-- it should be 5.');
-double(6);
+scopedDouble();
