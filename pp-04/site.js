@@ -11,8 +11,8 @@ function double(num) {
   return x;
 }
 
-double(6);
 console.log('The value of x is', x, '-- it should be 5.');
+double(6);
 
 /*
   Step 2. Rewrite the JavaScript `double()` function above so that
